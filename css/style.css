@@ -1,0 +1,2319 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Crimson Text", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*MAIN CONTAINER*/
+.main-container {
+    width: 100%;
+    min-width: 1500px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))),
+        url("https://cliquestudios.com/wp-content/themes/theme-staging/dist/images/about.gif?_=1520626410");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://cliquestudios.com/wp-content/themes/theme-staging/dist/images/about.gif?_=1520626410");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*HEADER ICONS*/
+.clique-icon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 110px;
+    background-color: #f88601;
+    z-index: 1000;
+}
+
+.clique-contact {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 110px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: rgba(35, 31, 32, 0.25);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1000;
+    border-radius: 2px;
+}
+
+.clique-icon a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    background-image: url("https://cliquestudios.com/wp-content/themes/theme-staging/dist/images/logo.svg?_=logo");
+    background-size: 75px 75px;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: inline-block;
+    z-index: 100;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    min-width: 1500px;
+    height: 100vh;
+    min-height: 700px;
+    /*background-color: #000000;*/
+    overflow: hidden;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*HEADER SEE OUR WORK ANIMATION*/
+.header h4 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: block;
+    text-align: right;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    /* -webkit-animation: seeourwork 0.7s ease forwards; */
+    /* animation: seeourwork 0.7s ease forwards; */
+    color: #fff;
+    margin: 0;
+}
+
+@-webkit-keyframes seeourwork {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+@keyframes seeourwork {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+.header h4:before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -310%;
+    width: 300%;
+    height: 100%;
+    border-bottom: 3px solid #f88601;
+}
+
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*NAVIGATION BAR*/
+.header-nav {
+    width: 100%;
+    min-width: 1500px;
+    height: 110px;
+    position: relative;
+}
+
+.header-nav ul {
+    height: 111px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 165px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    position: fixed;
+    top: 0;
+    z-index: 900;
+}
+
+.header-nav-anim {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.header-nav-hover {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.header-nav ul li {
+    position: relative;
+}
+
+.header-nav ul li:not(:first-child) {
+    margin-left: 3.8rem;
+}
+
+/*WORK LINK FOR BORDER ANIMATION*/
+#work-link {
+    position: relative;
+    display: inline-block;
+}
+
+#work-link-border {
+    position: absolute;
+    top: 16px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: 100%;
+    border-bottom: 3px solid #f88601;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*HEADER CONTENT SECTION*/
+.header-content {
+    position: relative;
+    width: 100%;
+    top: 20%;
+    left: 20%;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+/*HEADER ANIMATION*/
+.header-content-h1 {
+    overflow: hidden;
+    -webkit-animation: h1-anim 2s ease-in-out forwards;
+    animation: h1-anim 2s ease-in-out forwards;
+}
+
+@-webkit-keyframes h1-anim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes h1-anim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.header-content h1 {
+    font-size: 9.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    font-family: "Open Sans";
+    font-weight: 600;
+    min-width: 900px;
+}
+
+/*HEADER H3 ANIMATION*/
+.header-content-h3 {
+    height: 60px;
+    overflow: hidden;
+    -webkit-animation: h3-anim 2s ease-in-out forwards;
+    animation: h3-anim 2s ease-in-out forwards;
+}
+
+@-webkit-keyframes h3-anim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes h3-anim {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.header-content-h3 h3 {
+    min-width: 900px;
+}
+
+/*SIDE NAVIGATION*/
+.side-navigation {
+    position: absolute;
+    top: 130px;
+    width: 100px;
+    height: 400px;
+}
+
+.side-navigation-fixed {
+    position: fixed !important;
+    z-index: 1000;
+}
+
+.side-navigation ul {
+    height: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.side-navigation ul li:first-child {
+    position: relative;
+}
+
+/*SIDE NAVIGATION BORDER ANIMATION*/
+.funny-link-border {
+    position: absolute;
+    top: -40%;
+    left: -40px;
+    width: 220%;
+    height: 100%;
+    border-bottom: 2px solid #f88601;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.prestigious-link-anim {
+    top: 30px;
+}
+
+.delicious-link-anim {
+    top: 70px;
+}
+
+.last-link-anim {
+    top: 110px;
+}
+
+.comprehensive-link-anim {
+    top: 155px;
+}
+
+.public-link-anim {
+    top: 195px;
+}
+
+.inspiring-link-anim {
+    top: 237px;
+}
+
+.educational-link-anim {
+    top: 277px;
+}
+
+.secure-link-anim {
+    top: 320px;
+}
+
+.healthy-link-anim {
+    top: 360px;
+}
+
+/*SHARED CODE AMONG SECTIONS*/
+.main-section {
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.main-section-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.main-content {
+    position: relative;
+    top: 10%;
+    left: 8%;
+    color: #ffffff;
+    line-height: 1.2;
+    width: 40%;
+    height: 100%;
+}
+
+.main-content h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.main-logo {
+    width: 330px;
+    height: 72px;
+}
+
+.main-images {
+    position: relative;
+    width: 49%;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    overflow: hidden;
+}
+
+.image {
+    width: 500px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.build-content {
+    font-size: 4rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    line-height: 1.2;
+}
+
+.desc-content {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+.button-content {
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 1.75rem 8rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    position: relative;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button-content:before {
+    content: "View Case Study";
+    background-color: #ffffff;
+    color: #f88601;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.button-content:hover::before {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.button-content:after {
+    content: "View Case Study";
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem 0;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.button-content:hover::after {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+/*FUNNY SECTION*/
+
+.funny {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background.jpg?_=1462822291");
+    background-position: bottom;
+    height: 955px;
+}
+
+.funny-container {
+    /*position: absolute;*/
+    background-position: bottom;
+}
+
+.funny-content {
+    z-index: 11;
+}
+
+.funny-images {
+    margin-top: 12rem;
+}
+
+.funny-images img {
+    width: 500px;
+}
+
+#funny-image-1 {
+    /*top: 120px;*/
+    left: 750px;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    opacity: 0;
+}
+
+/*FUNNY SECTION ANIMATIONS*/
+
+.funny-image-anim-1 {
+    /*left: 0 !important;*/
+    /*top: 120px !important;*/
+    -webkit-animation: funny-anim-1 1.8s ease alternate;
+    animation: funny-anim-1 1.8s ease alternate;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.funny-image-anim-1-reverse {
+    -webkit-animation: funny-anim-1-reverse 0.7s ease;
+    animation: funny-anim-1-reverse 0.7s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#funny-image-2 {
+    /*left: 230px;*/
+    left: 750px;
+    opacity: 0;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    z-index: 1;
+}
+
+.funny-image-anim-2 {
+    left: 230px !important;
+    opacity: 1 !important;
+}
+
+@-webkit-keyframes funny-anim-1 {
+    0% {
+        left: 750px;
+        top: 0;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        left: 230px;
+        top: 0;
+    }
+
+    60% {
+        opacity: 0;
+        left: 230px;
+        top: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 120px;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes funny-anim-1 {
+    0% {
+        left: 750px;
+        top: 0;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        left: 230px;
+        top: 0;
+    }
+
+    60% {
+        opacity: 0;
+        left: 230px;
+        top: 0;
+    }
+    61% {
+        opacity: 1;
+    }
+
+    100% {
+        top: 120px;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes funny-anim-1-reverse {
+    0% {
+        top: 120px;
+        left: 0;
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+        left: 230px;
+        top: 0;
+    }
+    41% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        left: 230px;
+        top: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+        left: 750px;
+    }
+}
+
+@keyframes funny-anim-1-reverse {
+    0% {
+        top: 120px;
+        left: 0;
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+        left: 230px;
+        top: 0;
+    }
+    41% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        left: 230px;
+        top: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 0;
+        left: 750px;
+    }
+}
+
+/*PRESTIGIOUS SECTION*/
+.prestigious {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-1.jpg?_=1462822291");
+    height: 772px;
+}
+
+.prestigious-container {
+    /*position: absolute;*/
+}
+
+.prestigious-content {
+    z-index: 10;
+}
+
+.prestigious-images {
+    margin-top: 2rem;
+}
+
+.prestigious-images img {
+    width: 800px;
+}
+#prestigious-image-1 {
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: all 1.3s ease;
+    transition: all 1.3s ease;
+}
+
+#prestigious-image-2 {
+    top: 17%;
+    z-index: 2;
+    opacity: 0;
+    -webkit-transition: all 1.3s ease;
+    transition: all 1.3s ease;
+}
+
+#prestigious-image-3 {
+    top: 30%;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 1.3s ease;
+    transition: all 1.3s ease;
+}
+
+/*PRESTIGIOUS SECTION ANIMATIONS*/
+
+.prestigious-image-anim {
+    -webkit-animation: prestigious-anim 1.3s ease forwards;
+    animation: prestigious-anim 1.3s ease forwards;
+}
+
+@-webkit-keyframes prestigious-anim {
+    0% {
+        opacity: 0;
+        top: 30%;
+    }
+
+    50% {
+        opacity: 1;
+        top: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes prestigious-anim {
+    0% {
+        opacity: 0;
+        top: 30%;
+    }
+
+    50% {
+        opacity: 1;
+        top: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.prestigious-image-anim-reverse {
+    -webkit-animation: prestigious-anim-reverse 1.3s ease forwards;
+    animation: prestigious-anim-reverse 1.3s ease forwards;
+}
+
+@-webkit-keyframes prestigious-anim-reverse {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        top: 0;
+    }
+
+    100% {
+        opacity: 0;
+        top: 30%;
+    }
+}
+
+@keyframes prestigious-anim-reverse {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        top: 0;
+    }
+
+    100% {
+        opacity: 0;
+        top: 30%;
+    }
+}
+
+/*DELICIOUS SECTION*/
+
+.delicious {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-5.jpg?_=1462822291");
+    height: 955px;
+}
+
+.delicious-container {
+    /*position: absolute;*/
+}
+
+.delicious-content {
+    z-index: 9;
+}
+
+.delicious-images {
+    margin-top: 7rem;
+}
+
+.delicious-images img {
+    width: 500px;
+}
+
+.delicious-images .image:nth-child(1) {
+    z-index: 3;
+    top: 10%;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.delicious-images .image:nth-child(2) {
+    left: 27%;
+    z-index: 2;
+}
+
+.delicious-images .image:nth-child(3) {
+    left: 53%;
+    z-index: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+/*DELICIOUS ANIMATIONS*/
+
+.delicious-image {
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    -webkit-transform: translateY(110%);
+    transform: translateY(110%);
+}
+
+.delicious-image-anim {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+/*LAST SECTION*/
+
+.last {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-3.jpg?_=1462822291");
+    height: 810px;
+}
+
+.last-container {
+    /*position: absolute;*/
+}
+
+.last-content {
+    z-index: 8;
+}
+
+.last-images {
+    margin-top: 7rem;
+    overflow: unset;
+    left: 2%;
+}
+
+.last-images .image:nth-child(1) img {
+    width: 370px;
+}
+
+.last-images .image:nth-child(2) img {
+    width: 570px;
+}
+
+.last-images .image:nth-child(3) img {
+    width: 770px;
+}
+
+.last-images .image:nth-child(4) img {
+    width: 570px;
+}
+
+.last-images .image:nth-child(5) img {
+    width: 370px;
+}
+
+/*LAST SECTION ANIMATIONS*/
+
+.last-image-1 {
+    top: 10%;
+    left: -75%;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.last-image-1-anim {
+    top: 50%;
+    left: -15%;
+    opacity: 1;
+}
+
+.last-image-2 {
+    top: 95%;
+    left: 100%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.last-image-2-anim {
+    top: 30%;
+    left: -7%;
+    opacity: 1;
+}
+
+.last-image-3 {
+    top: -50%;
+    left: -100%;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.last-image-3-anim {
+    top: 10%;
+    left: -5%;
+    opacity: 1;
+}
+
+.last-image-4 {
+    left: 100%;
+    top: 50%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.last-image-4-anim {
+    left: 24%;
+    top: 5%;
+    opacity: 1;
+}
+
+.last-image-5 {
+    left: 0;
+    top: -30%;
+    opacity: 0;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.last-image-5-anim {
+    left: 53%;
+    top: 0;
+    opacity: 1;
+}
+
+/*COMPREHENSIVE SECTION*/
+
+.comprehensive {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-4.jpg?_=1462822291");
+    height: 955px;
+}
+
+.comprehensive-container {
+    /*position: absolute;*/
+}
+
+.comprehensive-content {
+    z-index: 7;
+}
+
+.comprehensive-images {
+    margin-top: 7rem;
+}
+
+.comprehensive-images img {
+    width: 500px;
+}
+
+.comprehensive-images .image:nth-child(1) {
+    top: 190px;
+    z-index: 10;
+}
+
+.comprehensive-images .image:nth-child(2) {
+    left: 230px;
+    -webkit-transition-delay: 0.08s;
+    transition-delay: 0.08s;
+}
+
+/*COMPREHENSIVE SECTION ANIMATIONS*/
+
+.comprehensive-image {
+    -webkit-transform: translateX(150%);
+    transform: translateX(150%);
+    opacity: 0;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.comprehensive-image-anim {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*PUBLIC SECTION*/
+
+.public {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-2.jpg?_=1462822291");
+    height: 882px;
+}
+
+.public-container {
+    /*position: absolute;*/
+}
+
+.public-images {
+    margin-top: 5rem;
+}
+
+.public-images img {
+    width: 450px;
+}
+
+#public-image-1 img {
+    width: 500px;
+}
+
+/*PUBLIC SECTION ANIMATIONS*/
+
+#public-image-1 {
+    z-index: 10;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translateY(105%);
+    transform: translateY(105%);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+.public-image-1-anim {
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+}
+
+#public-image-2 {
+    top: 100px;
+    left: 170px;
+}
+
+.public-image-2-anim {
+    -webkit-animation: public-image-2-anim 1.4s ease forwards;
+    animation: public-image-2-anim 1.4s ease forwards;
+}
+
+@-webkit-keyframes public-image-2-anim {
+    0% {
+        top: 100%;
+        left: 20px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 0;
+        left: 20px;
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+    100% {
+        top: 100px;
+        left: 190px;
+    }
+}
+
+@keyframes public-image-2-anim {
+    0% {
+        top: 100%;
+        left: 20px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 0;
+        left: 20px;
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+    100% {
+        top: 100px;
+        left: 190px;
+    }
+}
+
+.public-image-2-anim-reverse {
+    -webkit-animation: public-image-2-anim-reverse 1s ease forwards;
+    animation: public-image-2-anim-reverse 1s ease forwards;
+}
+
+@-webkit-keyframes public-image-2-anim-reverse {
+    0% {
+        top: 100px;
+        left: 190px;
+        opacity: 1;
+    }
+
+    50% {
+        top: 0;
+        left: 20px;
+        opacity: 1;
+    }
+
+    51% {
+        opacity: 0;
+    }
+    100% {
+        top: 100%;
+        left: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes public-image-2-anim-reverse {
+    0% {
+        top: 100px;
+        left: 190px;
+        opacity: 1;
+    }
+
+    50% {
+        top: 0;
+        left: 20px;
+        opacity: 1;
+    }
+
+    51% {
+        opacity: 0;
+    }
+    100% {
+        top: 100%;
+        left: 20px;
+        opacity: 0;
+    }
+}
+
+/*INSPIRING SECTION*/
+
+.inspiring {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-9.jpg?_=1462822291");
+    height: 955px;
+}
+
+.inspiring-container {
+    /*position: absolute;*/
+}
+
+.inspiring-content {
+    z-index: 6;
+}
+
+.inspiring-images {
+    margin-top: 1rem;
+    left: -2%;
+}
+
+.inspiring-images img {
+    width: 500px;
+}
+
+.inspiring-images .image:nth-child(1) {
+    z-index: 1;
+    top: 15%;
+}
+
+.inspiring-images .image:nth-child(2) {
+    left: 20%;
+    top: 7%;
+    z-index: 2;
+}
+
+.inspiring-images .image:nth-child(3) {
+    left: 40%;
+    z-index: 3;
+}
+
+/*INSPIRING SECTION ANIMATIONS*/
+
+.inspiring-image-anim {
+    -webkit-animation: inspiring-image-anim 1s ease forwards;
+    animation: inspiring-image-anim 1s ease forwards;
+}
+
+@-webkit-keyframes inspiring-image-anim {
+    0% {
+        opacity: 0;
+        left: 40%;
+        top: 100%;
+    }
+
+    50% {
+        top: 0;
+        left: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes inspiring-image-anim {
+    0% {
+        opacity: 0;
+        left: 40%;
+        top: 100%;
+    }
+
+    50% {
+        top: 0;
+        left: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.inspiring-image-anim-reverse {
+    -webkit-animation: inspiring-image-anim-reverse 1s ease forwards;
+    animation: inspiring-image-anim-reverse 1s ease forwards;
+}
+
+@-webkit-keyframes inspiring-image-anim-reverse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 0;
+        left: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 40%;
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes inspiring-image-anim-reverse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        top: 0;
+        left: 40%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 40%;
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/*EDUCATIONAL SECTION*/
+
+.educational {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-7.jpg?_=1462822291");
+    height: 955px;
+}
+
+.educational-container {
+    /*position: absolute;*/
+}
+
+.educational-content {
+    z-index: 5;
+}
+
+.educational-images {
+    margin-top: 6rem;
+    overflow: unset;
+}
+
+.educational-images img {
+    width: 500px;
+}
+
+.educational-images .image:nth-child(1) {
+    z-index: 1;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+/*EDUCATIONAL ANIMATIONS*/
+
+.educational-image-anim-1 {
+    -webkit-animation: educational-image-anim-1 1.5s ease forwards;
+    animation: educational-image-anim-1 1.5s ease forwards;
+}
+
+@-webkit-keyframes educational-image-anim-1 {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+}
+
+@keyframes educational-image-anim-1 {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+}
+
+.educational-image-anim-1-reverse {
+    -webkit-animation: educational-image-anim-1-reverse 1.5s ease forwards;
+    animation: educational-image-anim-1-reverse 1.5s ease forwards;
+}
+
+@-webkit-keyframes educational-image-anim-1-reverse {
+    0% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes educational-image-anim-1-reverse {
+    0% {
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.educational-images .image:nth-child(2) img {
+    width: 230px;
+}
+
+.educational-images .image:nth-child(2) {
+    z-index: 2;
+    left: 45%;
+    top: 5%;
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.educational-image-anim-2 {
+    -webkit-animation: educational-image-anim-2 1.5s ease forwards;
+    animation: educational-image-anim-2 1.5s ease forwards;
+}
+
+@-webkit-keyframes educational-image-anim-2 {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+}
+
+@keyframes educational-image-anim-2 {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+}
+
+.educational-image-anim-2-reverse {
+    -webkit-animation: educational-image-anim-2-reverse 1.5s ease forwards;
+    animation: educational-image-anim-2-reverse 1.5s ease forwards;
+}
+
+@-webkit-keyframes educational-image-anim-2-reverse {
+    0% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes educational-image-anim-2-reverse {
+    0% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+
+    50% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+/*SECURE SECTION*/
+
+.secure {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-6.jpg?_=1462822291");
+    height: 882px;
+}
+
+.secure-container {
+    /*position: absolute;*/
+}
+
+.secure-content {
+    z-index: 4;
+}
+
+.secure-images {
+    margin-top: 6rem;
+    overflow: unset;
+    -webkit-perspective: 5000px;
+    perspective: 5000px;
+    -webkit-perspective-origin: bottom;
+    perspective-origin: bottom;
+}
+
+.secure-images .image:nth-child(1) {
+    z-index: 1;
+    background: url("https://cliquestudios.com/wp-content/themes/theme-staging/dist/images/laptop-top.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.secure-images .image:nth-child(1) img {
+    position: relative;
+    width: 711px;
+    height: 464px;
+    top: 42px;
+    left: 145px;
+}
+
+.secure-images .image:nth-child(2) {
+    z-index: 2;
+    top: 68.5%;
+}
+
+/*LAPTOP  ANIMATIONS*/
+
+.laptop-bottom {
+    -webkit-transform: translateX(200%);
+    transform: translateX(200%);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.laptop-bottom-anim {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.laptop-top {
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    height: 540px;
+}
+
+.laptop-top-anim {
+    -webkit-animation: laptop-top-anim 2s ease forwards;
+    animation: laptop-top-anim 2s ease forwards;
+}
+
+@-webkit-keyframes laptop-top-anim {
+    0% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+
+    70% {
+        -webkit-transform: translateX(0) rotateX(-93deg);
+        transform: translateX(0) rotateX(-93deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotateX(0deg);
+        transform: translateX(0) rotateX(0deg);
+    }
+}
+
+@keyframes laptop-top-anim {
+    0% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+
+    70% {
+        -webkit-transform: translateX(0) rotateX(-93deg);
+        transform: translateX(0) rotateX(-93deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotateX(0deg);
+        transform: translateX(0) rotateX(0deg);
+    }
+}
+
+.laptop-top-anim-reverse {
+    -webkit-animation: laptop-top-anim-reverse 2s ease forwards;
+    animation: laptop-top-anim-reverse 2s ease forwards;
+}
+
+@-webkit-keyframes laptop-top-anim-reverse {
+    0% {
+        -webkit-transform: translateX(0) rotateX(0);
+        transform: translateX(0) rotateX(0);
+    }
+
+    30% {
+        -webkit-transform: translateX(0) rotateX(-93deg);
+        transform: translateX(0) rotateX(-93deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+}
+
+@keyframes laptop-top-anim-reverse {
+    0% {
+        -webkit-transform: translateX(0) rotateX(0);
+        transform: translateX(0) rotateX(0);
+    }
+
+    30% {
+        -webkit-transform: translateX(0) rotateX(-93deg);
+        transform: translateX(0) rotateX(-93deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(100%) rotateX(-93deg);
+        transform: translateX(100%) rotateX(-93deg);
+    }
+}
+
+/*HEALTHY SECTION*/
+
+.healthy {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/background-8.jpg?_=1462822291");
+    height: 882px;
+}
+
+.healthy-container {
+    /*position: absolute;*/
+}
+
+.healthy-content {
+    z-index: 3;
+}
+
+/*GALLERY SECTION*/
+
+.gallery {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.gallery-container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 9rem 0;
+}
+
+.gallery-content {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.gallery-content h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+.gallery-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*height: 900px;*/
+}
+
+.gallery-image-container {
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 275px;
+    position: relative;
+    background-size: cover;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.gallery-image-container:hover .gallery-image {
+    /*background-size: 100%;*/
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: grayscale(0%) !important;
+    filter: grayscale(0%) !important;
+}
+
+.gallery-image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: scale(1) translate(-50%, -50%);
+    transform: scale(1) translate(-50%, -50%);
+    width: 140px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.gallery-image-container:nth-child(1) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/smith-bg-1.png?_=1493905861");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/smith-bg-1.png?_=1493905861");
+}
+
+.gallery-image-container:nth-child(1):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/smith-bg-1.png?_=1493905861");
+}
+
+.gallery-image-container:nth-child(2) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/riverline-bg.png?_=1493907942");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/riverline-bg.png?_=1493907942");
+}
+
+.gallery-image-container:nth-child(2):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/riverline-bg.png?_=1493907942");
+}
+
+.gallery-image-container:nth-child(3) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/delta.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/delta.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(3):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/delta.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(4) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/opinionlab.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/opinionlab.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(4):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/opinionlab.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(5) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/dupage.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/dupage.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(5):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/dupage.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(6) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/edelson.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/edelson.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(6):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/edelson.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(7) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/cubii.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/cubii.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(7):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/cubii.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(8) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/cvs.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/cvs.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(8):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/cvs.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(9) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/pic.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/pic.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(9):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/pic.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(10) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/first-ib.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/first-ib.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(10):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/first-ib.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(11) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/goshena.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/goshena.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(11):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/goshena.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(12) .gallery-image {
+    background-image: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(rgba(255, 255, 255, 0.4)),
+            to(rgba(255, 255, 255, 0.4))
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/special-olympics.jpg?_=1462822291");
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)
+        ),
+        url("https://cliquestudios.com/wp-content/uploads/2016/03/special-olympics.jpg?_=1462822291");
+}
+
+.gallery-image-container:nth-child(12):hover .gallery-image {
+    background-image: url("https://cliquestudios.com/wp-content/uploads/2016/03/special-olympics.jpg?_=1462822291");
+}
+
+.gallery-image-link {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 100%;
+    right: 0;
+    background-color: rgba(35, 31, 32, 0.5);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.gallery-image-link i {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.gallery-image-container:hover .gallery-image-link {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+/*SOCIAL LINKS */
+
+.social-links-container {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.social-links {
+    width: 75%;
+    margin: auto;
+    margin-top: 70px;
+    height: auto;
+    text-transform: uppercase;
+    color: rgba(103, 103, 103, 0.76);
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.social-links-icons {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 25%;
+    padding-left: 80px;
+    margin: 0;
+}
+
+.social-links-icons li {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links-icons li a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    /*text-align: ;*/
+    position: relative;
+    vertical-align: middle;
+    -webkit-transition: border, -webkit-box-shadow 0.3s linear;
+    transition: border, -webkit-box-shadow 0.3s linear;
+    transition: border, box-shadow 0.3s linear;
+    transition: border, box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.social-links-icons li a i {
+    position: absolute;
+    top: 7px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.social-links span:nth-child(1) {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links span:nth-child(1) i {
+    margin-right: 5px;
+    font-size: 9px;
+}
+
+.social-links span:nth-child(2) {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links span:nth-child(2) i {
+    margin-right: 5px;
+    color: #cdcdcd;
+}
+
+.social-links span:nth-child(3) {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links span:nth-child(3) i {
+    margin-right: 5px;
+    color: #cdcdcd;
+}
+
+.facebook {
+    -webkit-box-shadow: inset 0 0 0 15px #3c5a97, 0 0 0 0 #3c5a97;
+    box-shadow: inset 0 0 0 15px #3c5a97, 0 0 0 0 #3c5a97;
+}
+
+.facebook:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 2px solid #3c5a97;
+}
+
+.facebook:hover i {
+    color: #3c5a97;
+    top: 5px;
+    left: 9px;
+}
+
+.fa-facebook-f {
+    left: 11px;
+    color: #ffffff;
+}
+
+.instagram {
+    -webkit-box-shadow: inset 0 0 0 15px #125688, 0 0 0 0 #125688;
+    box-shadow: inset 0 0 0 15px #125688, 0 0 0 0 #125688;
+}
+
+.instagram:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 2px solid #125688;
+}
+
+.instagram:hover i {
+    color: #125688;
+    top: 5px;
+    left: 6px;
+}
+
+.fa-instagram {
+    left: 8px;
+}
+
+.youtube {
+    -webkit-box-shadow: inset 0 0 0 15px #e14e42, 0 0 0 0 #e14e42;
+    box-shadow: inset 0 0 0 15px #e14e42, 0 0 0 0 #e14e42;
+}
+
+.youtube:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 2px solid #e14e42;
+}
+
+.youtube:hover i {
+    color: #e14e42;
+    top: 5px;
+    left: 4px;
+}
+
+.fa-youtube {
+    left: 6px;
+}
+
+.flickr {
+    -webkit-box-shadow: inset 0 0 0 15px #e1e1e1, 0 0 0 0 #e1e1e1;
+    box-shadow: inset 0 0 0 15px #e1e1e1, 0 0 0 0 #e1e1e1;
+}
+
+.flickr:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 2px solid #e1e1e1;
+}
+
+.flickr:hover i {
+    color: #e1e1e1;
+    top: 5px;
+    left: 6px;
+}
+
+.fa-flickr {
+    left: 8px;
+}
+
+.twitter {
+    -webkit-box-shadow: inset 0 0 0 15px #2aa9e0, 0 0 0 0 #2aa9e0;
+    box-shadow: inset 0 0 0 15px #2aa9e0, 0 0 0 0 #2aa9e0;
+}
+
+.twitter:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 2px solid #2aa9e0;
+}
+
+.twitter:hover i {
+    color: #2aa9e0;
+    top: 5px;
+    left: 6px;
+}
+
+.fa-twitter {
+    left: 8px;
+}
+
+.linkedin {
+    -webkit-box-shadow: inset 0 0 0 15px #018cb5, 0 0 0 0 #018cb5;
+    box-shadow: inset 0 0 0 15px #018cb5, 0 0 0 0 #018cb5;
+}
+
+.linkedin:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 2px solid #018cb5;
+}
+
+.linkedin:hover i {
+    color: #018cb5;
+    top: 5px;
+    left: 8px;
+}
+
+.fa-linkedin-in {
+    left: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+    height: 500px;
+    background-color: transparent;
+}
+
+.footer-content {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 120px;
+    letter-spacing: 1px;
+}
+
+.footer-content h1 {
+    font-size: 46px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.footer-btn {
+    border-color: #f88601;
+    padding: 1.75rem 7rem;
+    margin-right: 5rem;
+}
+
+.footer-btn:before {
+    content: "312-379-9329";
+    color: #ffffff;
+    background-color: #f88601;
+}
+
+.footer-btn:after {
+    content: "312-379-9329";
+    color: #f88601;
+}
+
+.footer-btn2 {
+    border-color: #f88601;
+    padding: 1.75rem 7rem;
+}
+
+.footer-btn2:before {
+    content: "Message Us";
+    color: #ffffff;
+    background-color: #f88601;
+}
+
+.footer-btn2:after {
+    content: "Message Us";
+    color: #f88601;
+}
